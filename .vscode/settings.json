@@ -1,0 +1,12 @@
+{
+    "liveServer.settings.port": 80,
+    "liveServer.settings.root": "C:\Users\Owner\Desktop\YO\Programmation\Alien Rain",
+    "liveServer.settings.CustomBrowser" : "chrome",
+    "liveServer.settings.NoBrowser" : false,
+    "liveServer.settings.ignoreFiles" : [
+            ".vscode/**",
+            "**/*.scss",
+            "**/*.sass"
+    ]
+
+}

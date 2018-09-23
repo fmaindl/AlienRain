@@ -1,0 +1,33 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+canvas {
+    background-color: #000;
+    display: block;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+button {
+    background-color: #4CAF50;
+    border: 20 px;
+    border-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 10px;
+}
+
+score_letr {
+    font-size: 16px;
+}

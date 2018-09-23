@@ -1,0 +1,32 @@
+TODO menu:
+
+
+
+1- GenerateDamage to ramp function (need collision count for ramp, after 3 hits ramp disappears)
+
+2- Collision boolean function (for ramp and targets)
+
+3- create target object (easy)
+
+4- create collision route for blob (function in the blob class object, create boolean variable which when true 
+initiates the collision script, interrupts the normal update and run a different route)
+If too slow, can try to draw imaginary line between extremities of ramp, then test collision in gameState.js
+** do like the asteroid game, create an array with all the points**
+
+5- create a transparent line with mouse click that linkes to where user is dragging to
+
+
+
+
+
+
+
+
+Notes:
+
+1- How to open html in browser in the cs50ide "apache50 start [directory]"
+
+http://jsfiddle.net/gCxcT/ for the canvas thing
+
+
+
