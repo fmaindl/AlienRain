@@ -29,6 +29,7 @@ function InitBlob(img) {
             new Sprite(img, 148, 42, 24, 24),
             new Sprite(img, 212, 42, 24, 24)
         ]
+        
 
 };
 

@@ -42,8 +42,10 @@ var Blob = Class.extend({
                 this.collision_animation_frame = 0;
             }
             else if (this.animation_vector > 170 | this.animation_vector < -170) {
-                this.y += 0.5;
-                this.collision_animation_frame++;
+                if (frames % this.speed === 0) {
+                    this.y += 0.5;
+                    this.collision_animation_frame++;
+                }
             }
             else if (this.animation_vector > -5 && this.animation_vector < 5) {
                 if (frames % this.speed === 0) {
@@ -54,7 +56,7 @@ var Blob = Class.extend({
             else {
                 if (frames % this.speed === 0 && this.animation_vector > 0 && this.animation_vector < 90) {
                     this.x += 0.70;
-                    this.y -= (0.70 / Math.tan(radian));
+                    this.y -= (1 / Math.tan(radian));
                     if (0.70 / Math.tan(radian) < 0.20) {
                         this.y -= 0.2;
                     }
@@ -64,18 +66,18 @@ var Blob = Class.extend({
                 }
                 else if (frames % this.speed === 0 && this.animation_vector < 0 && this.animation_vector > -90) {
                     this.x -= 0.70;
-                    this.y += (0.70 / Math.tan(radian));
+                    this.y += (1 / Math.tan(radian));
                     if (0.70 / Math.tan(radian) < 0.20) {
-                        this.y -= 0.2;
+                        this.y += 0.2;
                     }
                     this.animation_vector *= 1.03;
                     this.collision_animation_frame++;
                 }
                 else if (frames % this.speed === 0 && this.animation_vector > 0 && this.animation_vector > 90) {
                     this.x += 0.7;
-                    this.y += (0.7 / Math.tan(radian - Math.PI / 4));
+                    this.y += (1 / Math.tan(radian - Math.PI / 4));
                     if (0.70 / Math.tan(radian - Math.PI / 4) < 0.20) {
-                        this.y -= 0.2;
+                        this.y += 0.2;
                     }
                     this.animation_vector *= 1.03;
                     this.collision_animation_frame++;
@@ -83,7 +85,7 @@ var Blob = Class.extend({
                 }
                 else if (frames % this.speed === 0 && this.animation_vector < 0 && this.animation_vector < -90) {
                     this.x -= 0.7;
-                    this.y -= (0.7 * Math.tan(radian - Math.PI / 4));
+                    this.y -= (1 * Math.tan(radian - Math.PI / 4));
                     if (0.70 / Math.tan(radian - Math.PI / 4) < 0.20) {
                         this.y -= 0.2;
                     }

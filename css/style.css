@@ -3,6 +3,8 @@
 	margin: 0;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Chewy);
+
 canvas {
     background-color: #000;
     display: block;

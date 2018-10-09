@@ -12,12 +12,16 @@
             ctx.width = ctx.canvas.width;
             ctx.height = ctx.canvas.height;
 
-            ctx.font = "16px Helvetica";
+            ctx.font = "16px Futura, Helvetica, sans-serif";
 
             ctx.lineWidth = 1;
 
 
             ctx.strokeStyle = "red";
+
+            ctx.clearAll = function() {
+				this.clearRect(0, 0, this.width, this.height);
+			};
             
         
             

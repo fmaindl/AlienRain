@@ -2,18 +2,9 @@ TODO menu:
 
 
 
-1- GenerateDamage to ramp function (need collision count for ramp, after 3 hits ramp disappears)
-
-2- Collision boolean function (for ramp and targets)
-
-3- create target object (easy)
-
-4- create collision route for blob (function in the blob class object, create boolean variable which when true 
-initiates the collision script, interrupts the normal update and run a different route)
-If too slow, can try to draw imaginary line between extremities of ramp, then test collision in gameState.js
-** do like the asteroid game, create an array with all the points**
-
-5- create a transparent line with mouse click that linkes to where user is dragging to
+1- Handle moving from one state to the other (in Gamestate insure the transition logically and graphically) for 
+graphics, have the transparency slowly go to 0. 
+2- Create a menu and end state
 
 
 
